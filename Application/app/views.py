@@ -1,46 +1,44 @@
-"""
-Definition of views.
-"""
-
-from django.shortcuts import render
-from django.http import HttpRequest
-from django.template import RequestContext
-from datetime import datetime
+from django.shortcuts import render, redirect
+from .forms import PersonalDataForm
+from .models import PersonalData, Commentaire, Newsletter
+# Create your views here.
+from django.contrib import messages
 
 def home(request):
-    """Renders the home page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/index.html',
-        {
-            'title':'Home Page',
-            'year':datetime.now().year,
-        }
-    )
+    return render(request, 'pages/index.html')
 
-def contact(request):
-    """Renders the contact page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/contact.html',
-        {
-            'title':'Contact',
-            'message':'Your contact page.',
-            'year':datetime.now().year,
-        }
-    )
 
 def about(request):
-    """Renders the about page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/about.html',
-        {
-            'title':'About',
-            'message':'Your application description page.',
-            'year':datetime.now().year,
-        }
-    )
+    return render(request, 'pages/about-us.html')
+
+
+def contact(request):
+    return render(request, 'pages/contact-us.html')
+
+
+def vehicule(request):
+    return render(request, 'pages/vehicule.html')
+
+
+def vehicule_detail(request):
+    return render(request, 'pages/shop-detail.html')
+
+
+def formulaire( request):
+     form = PersonalDataForm(request.POST or None)
+     if form.is_valid():
+         obj=PersonalData.objects.create(** form.cleaned_data)
+         obj.save()
+         form = PersonalDataForm()
+         print('data valid')
+         messages.success(request, "Votre dossier a été soumis avec succes, vous allez être recontacté!")
+     else: 
+         print('data is not valid')
+         messages.warning(request, "Une erreur s'est produite!")
+     context={'form': form}
+     template_name = 'pages/formulaire.html'
+     return render(request, template_name, context)
+
+
+def details(request):
+    return render(request, 'pages/shop-detail.html')

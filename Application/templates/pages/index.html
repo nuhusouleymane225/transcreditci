@@ -1,0 +1,445 @@
+{% extends 'bases/home_base.html' %}
+{% load static %}
+
+
+{% block content %}
+	
+	<!-- Main Start -->
+	<div class="main-section"> 
+		<!--Main Banner-->
+		<div class="page-section" style="background: url({% static 'extra-images/full-section-img.jpg' %})no-repeat; background-size:cover; padding:206px 0 80px; text-shadow: 3px 4px 6px rgba(0,0,0,.37);margin-top:-30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="image-frame defualt" style="padding-top:40px;">
+							<div class="cs-media">
+								<figure> <img src="{% static 'images/taxis/toyota.png' %}" alt=""/> </figure>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="cs-column-text">
+							<br><br>
+							<h1 style="color:#fff !important; font-size:50px !important; line-height:55px !important; text-shadow: 3px 4px 6px rgba(0,0,0,.37);">AVEC TRANS CREDIT COTE D'IVOIRE <br> 1 CITOYEN 1 TAXI.</h1>
+							<a href="{% url 'about' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">SAVOIR PLUS SUR L'OFFRE</a> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Main Banner--> 
+
+		<!--A Propos de l'offre-->
+		<div class="page-section" style="margin-top:140px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						<div class="cs-column-text">
+							<h2 style="font-size:27px !important;">Tout savoir sur l'offre 1 Citoyen 1 Taxi</h2>
+							<p style="font-size: 18px; line-height: 30px;">Avec un apport initial de 50% du coût total du véhicule, devenez propriétaired'un taxi compteur neuf et bénéficiez d'un remboursement flexible à raison de 10.000 F CFA / jour.</p><br>
+							<h4>Découvrez les conditions de souscriptions</h4>
+							<ul class="cs-icon-list">
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Apport initial de 50 % du cout du véhicule.</li><br>
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Frais de dossier : 100 000 FR CFA.</li><br>
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Délais de remboursement : entre 12 à 18 mois.</li><br>
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Montant à verser / jours : 10 000 FR CFA.</li>
+							</ul>
+							<h4>Dossiers à fournir</h4>
+							<ul class="cs-icon-list">
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Photocopie de la pièce d’identité/attestation /passeport.</li><br>
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>2 photos identité de même tirage.</li><br>
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Facture CIE OU SODECI et un certificat de résidence.</li><br>
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Photocopie de la pièce d’identité + 2 photos identité de même tirage du chauffeur.</li>
+								<li style="font-size: 13px;"><i class="icon-check2 cs-color"></i>Frais de certification du notaire à la charge de trans- crédit ci (25 000 FR CFA).</li><br>
+							</ul>
+							<a href="{% url 'formulaire' %}" class="btn-contact cs-color csborder-color">Souscrire à l'offre</a> </div>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div class="cs-video-frame">
+							<img width="560" height="340" src="{% static 'images/taxis/RENAULT LOGAN.jpg' %}">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--End A Propos de l'offre-->
+		
+		
+		<!--tabs section-->
+		<div class="page-section" style="padding-top:100px; padding-bottom:0px;">
+			<div class="container">
+				<div class="row">
+					<div class="section-fullwidtht col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 co-sm-12 col-xs-12"><!--Element Section Start-->
+								<div class="cs-section-title">
+									<h3 style="text-transform:uppercase !important;">Découvrez nos différents taxis</h3>
+								</div>
+								<!--Tabs Start-->
+								
+								<div class="cs-tabs full-width">
+									<div class="tab-content">
+										<div id="home" class="tab-pane fade in active">
+											<div class="row">
+												
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/RENAULT KWID.jpg' %}" alt="#"/></figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">Renault</a></span>
+															<div class="post-title">
+																<h6><a href="#">Renault Kwid </a></h6>
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view6"></a>
+																<div id="list-view6" class="collapse">
+																	<ul>
+																		<li>Année : 2020 /2021</li>
+																		<li>Energie Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Kilométrage : 0 km au compteur</li>
+																		<li>3 cylindres</li>
+																		<li>Climatisation d’origine</li>
+																		<li>Très confortable</li>
+																		<li>Nombre de place : 5 places</li>
+																		<li>4 Portières</li>
+																		<li>Capacité du coffre : 290 litres</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>														
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/RENAULT LOGAN.jpg' %}" alt="#"/></figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">Renault</a></span>
+															<div class="post-title">
+																<h6><a href="#">RENAULT LOGAN </a></h6>
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view7"></a>
+																<div id="list-view7" class="collapse">
+																	<ul>
+																		<li>Année : 2020 /2021</li>
+																		<li>Energie Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Kilométrage : 0 km au compteur</li>
+																		<li>3 cylindres</li>
+																		<li>Climatisation d’origine</li>
+																		<li>Jantes en Aluminium</li>
+																		<li>Très confortable</li>
+																		<li>Nombre de place : 5 places</li>
+																		<li>4 Portières</li>
+																		<li>Capacité du coffre : 528 litres</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>														
+														</div>
+													</div>
+												</div>
+
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/SUZIKI SPRESSO.jpg' %}" alt="#"/></figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">Suzuki</a></span>
+															<div class="post-title">
+																<h6><a href="#">Suzuki S'Presso </a></h6>
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view2"></a>
+																<div id="list-view2" class="collapse">
+																	<ul>
+																		<li>Année : 2020 / 2021</li>
+																		<li>Energie Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Kilométrage : 0 km au compteur</li>
+																		<li>4 Cylindres</li>
+																		<li>Jantes en toles 14</li>
+																		<li>Climatisation d'origine</li>
+																		<li>Très Confortable</li>
+																		<li>Nombre de Place : 5 Places</li>
+																		<li>4 Portières</li>
+																		<li>Capacité du réservoire : 239 litres</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>														
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/SUZUKI DZIRE.jpg' %}" alt="#"/></figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">Suzuki</a></span>
+															<div class="post-title">
+																<h6><a href="#">SUZUKI DZIRE </a></h6>
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view3"></a>
+																<div id="list-view3" class="collapse">
+																	<ul>
+																		<li>Année : 2020 / 2021</li>
+																		<li>Energie Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Kilométrage : 0 km au compteur</li>
+																		<li>4 Cylindres</li>
+																		<li>Jantes en toles 14</li>
+																		<li>Climatisation d'origine</li>
+																		<li>Très Confortable</li>
+																		<li>Nombre de Place : 5 Places</li>
+																		<li>4 Portières</li>
+																		<li>Capacité du réservoire : 378 litres</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>														
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/SUZUKI SWIFT.png' %}" alt="#"/> </figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">SUZUKI</a></span>
+															<div class="post-title">
+																<h5><a href="#">Suzuki Swift </a></h5>
+																<!--
+																	<div class="auto-price"><span class="cs-color">$25,000</span> <em>MSRP $27,000</em></div>
+																-->
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view4"></a>
+																<div id="list-view4" class="collapse">
+																	<ul>
+																		<li>Année : 2020 / 2021</li>
+																		<li>Energie Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Kilométrage : 0 km au compteur</li>
+																		<li>4 Cylindres</li>
+																		<li>Jantes en toles 14</li>
+																		<li>Climatisation d'origine</li>
+																		<li>Très Confortable</li>
+																		<li>Nombre de Place : 5 Places</li>
+																		<li>4 Portières</li>
+																		<li>Capacité du réservoire : 268 litres</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/SUZUKI ALTO.jpg' %}" alt="#"/></figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">SUZUKI</a></span>
+															<div class="post-title">
+																<h6><a href="#">Suzuki Alto </a></h6>
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view5"></a>
+																<div id="list-view5" class="collapse">
+																	<ul>
+																		<li>Année : 2020 / 2021</li>
+																		<li>Energie Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Kilométrage : 0 km au compteur</li>
+																		<li>4 Cylindres</li>
+																		<li>Jantes en toles 14</li>
+																		<li>Climatisation d'origine</li>
+																		<li>Très Confortable</li>
+																		<li>Nombre de Place : 5 Places</li>
+																		<li>4 Portières</li>
+																		<li>Capacité du réservoire : 180 litres</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/TOYOTA STARLET.jpg' %}" alt="#"/> </figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">Toyota</a></span>
+															<div class="post-title">
+																<h5><a href="#">TOYOTA Starlet </a></h5>
+																<!--
+																	<div class="auto-price"><span class="cs-color">$25,000</span> <em>MSRP $27,000</em></div>
+																-->
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view"></a>
+																<div id="list-view" class="collapse">
+																	<ul>
+																		<li>Année : 2020 / 2021</li>
+																		<li>Energie : Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Nombre de Place : 5 Places</li>
+																		<li>4 Cylindres</li>
+																		<li>4 Portières</li>
+																		<li>Jantes en toles avec enjoliveurs</li>
+																		<li>Capacité du réservoire : 371 litres</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+																<input type="checkbox" name="list" value="check-listn" id="check-list">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+													<div class="auto-listing auto-grid">
+														<div class="cs-media">
+															<figure> <img width="253" height="171" src="{% static 'images/mini_taxis/TOYOTA STARLET.jpg' %}" alt="#"/></figure>
+														</div>
+														<div class="auto-text"> <span class="cs-categories"><a href="#">Toyota</a></span>
+															<div class="post-title">
+																<h6><a href="#">Toyota Corolla </a></h6>
+															</div>
+															<div class="btn-list"> <a href="javascript:void(0)" class="btn btn-danger collapsed" data-toggle="collapse" data-target="#list-view1"></a>
+																<div id="list-view1" class="collapse">
+																	<ul>
+																		<li>Année : 2020 / 2021</li>
+																		<li>Energie : Essence</li>
+																		<li>Boîte Manuelle</li>
+																		<li>Nombre de Place : 5 Places</li>
+																		<li>4 Cylindres</li>
+																		<li>4 Portières</li>
+																		<li>Jantes en toles avec enjoliveurs</li>
+																		<li>Capacité du réservoire : 501 litres</li>
+																		<li>Type de Moteur en Ligle</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="cs-checkbox">
+															</div>
+															<div class="cs-column-text" style="text-align: center;">
+																<a href="{% url 'details' %}" class="cs-button" style="color:#fff; font-size:15px; padding:5px 20px; text-shadow: 3px 4px 6px rgba(0,0,0,.37); margin-bottom:20px; ">Voir les détails  <i class=" icon-arrow-long-right"></i></a> 
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												
+											</div>
+										</div>
+
+								</div>
+								<!--Tabs End--> 
+								<!--Element Section End--></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--tabs section-->
+		
+		
+		
+		<div class="page-section" style="margin-bottom:70px; margin-top: 100px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="section-title" style="text-align:center; color:#333333; margin-bottom:45px;">
+							<h3 style="margin-bottom:5px;">POURQUOI NOUS CHOISIR</h3>
+							<p>La satisfaction client est un engagement soutenu par notre démarche d'améliorations continue.</p>
+						</div>
+					</div>
+			
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-car230 cs-color" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>CLIMATISATION</h6>
+								<p>Son rôle est de rafraîchir l’air dans l’habitacle grâce à un fluide réfrigérant.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-energy42 cs-color" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>BOITE MANUELLE </h6>
+								<p>Elle permet de modérer l’allure en cinq ou six vitesses, avec la marche arrière et permet d'économiser du carburant.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-car36 cs-color" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>ZERO kM AU COMPTEUR </h6>
+								<p>Vous aurez l'assurance que le véhicule étant sorti directement d'usine et n'ayant pas été utilisé par un particulier auparavant.</p>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+
+		<div class="page-section" style="margin-bottom:0; background:#edf0f5; padding:35px 0 ;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<ul class="cs-partners-slider">
+							<li><a href="#"><img src="{% static 'images/renault.png' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'images/suzuki.png' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'extra-images/partner-img-5.jpg' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'images/renault.png' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'images/suzuki.png' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'extra-images/partner-img-5.jpg' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'images/renault.png' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'images/suzuki.png' %}" alt="" /></a></li>
+							<li><a href="#"><img src="{% static 'extra-images/partner-img-5.jpg' %}" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main End -->
+
+	{% endblock content %}
