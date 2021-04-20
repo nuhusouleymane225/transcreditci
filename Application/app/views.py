@@ -36,3 +36,32 @@ def formulaire( request):
 
 def details(request):
     return render(request, 'pages/shop-detail.html')
+
+
+#### Tous ce qui est en bas est à supprimer une fois qu'on a creer les slug pour prendre
+### les id en parametres j'ai fais cala chap chap pour qu'on presente a Amissob tu comprends un peu non Amissob rire ... 
+
+def detail_renault_kwid(request):
+    return render(request, 'pages/vehicules/detail_renault_kwid.html')
+
+def detail_renault_logan(request):
+    return render(request, 'pages/vehicules/detail_renault_logan.html')
+
+def detail_suzuki_alto(request):
+    return render(request, 'pages/vehicules/detail_suzuki_alto.html')
+
+def detail_suzuki_dzire(request):
+    return render(request, 'pages/vehicules/detail_suzuki_dzire.html')
+
+def detail_suzuki_presso(request):
+    return render(request, 'pages/vehicules/detail_suzuki_presso.html')
+
+def detail_suzuki_swift(request):
+    return render(request, 'pages/vehicules/detail_suzuki_swift.html')
+
+def detail_toyota_corolla(request):
+    return render(request, 'pages/vehicules/detail_toyota_corolla.html')
+
+def detail_toyota_starlet(request):
+    return render(request, 'pages/vehicules/detail_toyota_starlet.html')
+
